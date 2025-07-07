@@ -1862,7 +1862,13 @@ export default function Home() {
 
             {/* YouTube Embed with mobile optimization */}
             {selectedVideoUrl && (
-              <div className="relative bg-black" style={{ paddingBottom: '56.25%', height: 0 }}>
+              <div 
+                className="relative bg-black w-full" 
+                style={{ 
+                  height: 'min(56.25vw, 90vh)',
+                  maxHeight: '90vh'
+                }}
+              >
                 <iframe
                   src={`${getYouTubeEmbedUrl(selectedVideoUrl) || ''}?enablejsapi=1&playsinline=1&modestbranding=1&rel=0&fs=1&autoplay=0`}
                   title="YouTube video player"
