@@ -376,7 +376,7 @@ export default function Portfolio() {
       
       {/* Video Modal */}
       <Dialog open={isVideoModalOpen} onOpenChange={closeVideoModal}>
-        <DialogContent className="max-w-[95vw] md:max-w-[80vw] lg:max-w-[1200px] xl:max-w-[1400px] max-h-[95vh] w-full h-auto bg-transparent border-none p-0 m-0">
+        <DialogContent className="max-w-[95vw] md:max-w-[99vw] lg:max-w-[99vw] xl:max-w-[99vw] max-h-[95vh] md:max-h-[98vh] w-full h-auto bg-transparent border-none p-0 m-0">
           <DialogHeader className="sr-only">
             <DialogTitle>Перегляд відео</DialogTitle>
             <DialogDescription>Повноекранний перегляд відео з портфоліо</DialogDescription>
